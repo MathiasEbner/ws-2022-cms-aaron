@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* source-sans-pro-200 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-200.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-200.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-200.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-200.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-200.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-300.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-300.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-300.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-300.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-regular.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-regular.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-regular.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-regular.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-600.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-600.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-600.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-600.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-600.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-700.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-700.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-700.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-700.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-900 - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/fonts/source-sans-pro-v21-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/fonts/source-sans-pro-v21-latin-900.eot?#iefix") format("embedded-opentype"), url("./fonts/fonts/source-sans-pro-v21-latin-900.woff2") format("woff2"), url("./fonts/fonts/source-sans-pro-v21-latin-900.woff") format("woff"), url("./fonts/fonts/source-sans-pro-v21-latin-900.ttf") format("truetype"), url("./fonts/fonts/source-sans-pro-v21-latin-900.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: hsl(26deg, 62%, 56.7%);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: hsl(26deg, 62%, 56.7%);
+  font-weight: 300;
+  padding: 0.5rem 0rem 0.75rem 0.75rem;
+}
+
+.super-headline {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 21%);
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+
+.button {
+  border: 1px solid hsl(26deg, 100%, 72%);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.24px;
+}
+
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #hamburger {
+    width: 24px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+  }
+  #hamburger [class^=line-] {
+    position: absolute;
+    background-color: hsl(26deg, 100%, 72%);
+    height: 1px;
+    transition: transform 0.5s ease;
+    right: 0;
+  }
+  #hamburger:hover {
+    cursor: pointer;
+  }
+  #hamburger .line-1 {
+    top: 0;
+    width: 100%;
+  }
+  #hamburger .line-2 {
+    top: 8px;
+    width: 75%;
+  }
+  #hamburger.open .line-1 {
+    transform: rotate(45deg);
+    transform-origin: 0px 0px;
+  }
+  #hamburger.open .line-2 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+    width: 100%;
+    transform-origin: 0px 5px;
+  }
+  #hamburger.open + ul {
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  #hamburger.closed + ul {
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+.topNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #mainnav {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+  }
+  #mainnav ul {
+    position: fixed;
+    padding: 3rem 1rem 1rem 1rem;
+    width: 100vw;
+    height: 100vh;
+    max-width: 27rem;
+    top: 0;
+    right: 0;
+    background-color: hsl(0deg, 0%, 21%);
+    box-shadow: -5px 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  #mainnav ul li {
+    font-size: 1.37rem;
+    text-align: right;
+    padding: 1rem 0 1rem 0;
+    text-decoration: none;
+  }
+  #mainnav ul li a {
+    text-decoration: none;
+    color: hsl(0deg, 0%, 100%);
+  }
+}
+header {
+  background-image: url("../../images/header_2560px_edited.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 5% top 50%;
+  height: 60vh;
+}
+header a {
+  text-decoration: none;
+}
+header h1 {
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header h1 #h1Small {
+  font-weight: 300;
+  text-transform: none;
+}
+header .headerMainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+header .headerMainContainer .headerText {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+header .headerMainContainer .headerText h2 {
+  font-size: 2.3rem;
+  color: hsl(26deg, 100%, 72%);
+  margin-bottom: 30px;
+}
+header .headerMainContainer .headerText #headerButton {
+  background-color: black;
+  color: hsl(0deg, 0%, 100%);
+}
+
+#workshops .level {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 20px auto auto;
+  grid-template-areas: "_image _image apply" "_text _text apply" "quote quote apply";
+  background-color: hsl(0deg, 0%, 21%);
+  margin-top: 100px;
+}
+#workshops .level .imageContainer {
+  grid-area: _image;
+  justify-self: center;
+  position: relative;
+  bottom: 110px;
+}
+#workshops .level .imageContainer .number {
+  background-color: hsl(0deg, 0%, 84%);
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  color: hsl(26deg, 62%, 56.7%);
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  left: 104px;
+  top: 27px;
+}
+#workshops .level .imageContainer .imgCircle {
+  background-color: hsl(0deg, 0%, 35%);
+  border-radius: 50%;
+  padding: 1.7rem;
+  position: relative;
+  z-index: 10;
+}
+#workshops .level .imageContainer .imgCircle img {
+  width: 80px;
+}
+#workshops .level .textContainer {
+  grid-area: _text;
+  padding: 1rem;
+  margin-top: 70px;
+}
+#workshops .level .textContainer h3 {
+  padding: 0.5rem 0rem 0.75rem 0rem;
+}
+#workshops .level .textContainer p {
+  margin-bottom: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+}
+#workshops .level .textContainer .button {
+  color: hsl(0deg, 0%, 100%);
+}
+#workshops .level .quoteContainer {
+  grid-area: quote;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+#workshops .level .quoteContainer img {
+  width: 70px;
+}
+#workshops .level .quoteContainer blockquote {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 0.5rem;
+}
+#workshops .level .applyContainer {
+  grid-area: apply;
+  padding: 1rem 0rem 0rem 0rem;
+  background-color: hsl(0deg, 0%, 97%);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: hsl(0deg, 0%, 10%);
+}
+
+#about {
+  background-color: hsl(23deg, 100%, 97%);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  padding: 100px 0px 100px 0px;
+}
+#about .aboutTextContainer {
+  padding: 0px 1rem 0px 1rem;
+  margin-top: 2rem;
+}
+#about .aboutTextContainer h2 {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+#about .aboutTextContainer p:nth-of-type(2) {
+  margin-bottom: 3rem;
+}
+
+#news {
+  margin-top: 3rem;
+}
+#news .newsHeadline {
+  padding: 0px 1rem 0px 1rem;
+}
+#news .articleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#news .articleContainer article {
+  background-color: hsl(0deg, 0%, 97%);
+  width: 93%;
+  margin-bottom: 2rem;
+}
+#news .articleContainer article img {
+  width: 100%;
+}
+#news .articleContainer article .arcticleTextContainer {
+  padding: 1rem 1rem 3.5rem 1rem;
+}
+#news .articleContainer article p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: hsl(0deg, 0%, 21%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem 2rem 2rem;
+}
+footer h4 {
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 300;
+}
+footer p {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 300;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(26deg, 82%, 65%);
+}
+
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
