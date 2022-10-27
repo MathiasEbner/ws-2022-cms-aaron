@@ -1,23 +1,23 @@
-.topNavContainer {
+#mainnav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    // #mainnav {
-    //     // #hamburger {
-    //     //     visibility: hidden;
-    //     // }
-    //     ul {
-    //         display: flex;
-    //         justify-content: space-between;
-    //         li {
-    //             padding: 0 0.5rem 0 0.5rem;
-    //             a {
-    //                 color: $orange-middle;
-    //                 text-transform: uppercase;
-    //                 text-decoration: underline;
-    //             }
-    //         }
-    //     }
-    // }
+    #hamburger {
+        visibility: hidden;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            padding: 0rem 1rem 0rem 1rem;
+            a {
+                font-weight: 600;
+                font-size: 1.125rem;
+                color: $orange-middle;
+                text-transform: uppercase;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 0.4rem;
+            }
+        }
+    }
 }

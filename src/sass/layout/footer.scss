@@ -2,17 +2,21 @@ footer {
     background-color: $gray-dark;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     h4 {
-        font-size: 1.2rem;
+        font-size: 2.125rem;
         color: $white;
         font-weight: 300;
+        padding: 0.6rem 0rem 0.6rem 0rem;
     }
     p {
         color: $white;
-        font-weight: 300;
     }
+
     a {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
         text-decoration: none;
         color: $orange-middle;
     }
@@ -21,5 +25,12 @@ footer {
 @include breakpoint(0, $mobile) {
     footer {
         flex-direction: column;
+        padding: 20px 0rem 40px 40px;
+        h4 {
+            font-size: 1.37rem;
+        }
+        a {
+            font-size: 1rem;
+        }
     }
 }
