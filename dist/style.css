@@ -66,7 +66,7 @@ table {
   font-style: normal;
   font-weight: 300;
   src: url("./fonts/source-sans-pro-v21-latin-300.eot"); /* IE9 Compat Modes */
-  src: local(""), url("./fonts/source-sans-pro-v21-latin-300.eot?#iefix") format("embedded-opentype"), url("./fontssource-sans-pro-v21-latin-300.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-300.woff") format("woff"), url("./fonts/source-sans-pro-v21-latin-300.ttf") format("truetype"), url("./fonts/source-sans-pro-v21-latin-300.svg#SourceSansPro") format("svg"); /* Legacy iOS */
+  src: local(""), url("./fonts/source-sans-pro-v21-latin-300.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro-v21-latin-300.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-300.woff") format("woff"), url("./fonts/source-sans-pro-v21-latin-300.ttf") format("truetype"), url("./fonts/source-sans-pro-v21-latin-300.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 /* source-sans-pro-regular - latin */
 @font-face {
@@ -701,6 +701,17 @@ header .headerMainContainer #headerButton {
 }
 #news .articleContainer article .arcticleTextContainer {
   padding: 2rem 2rem 0rem 2rem;
+}
+
+.singleNewsContent {
+  padding: 1rem;
+}
+.singleNewsContent h2 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+.singleNewsContent .date {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 0rem) and (max-width: 37.4375rem) {

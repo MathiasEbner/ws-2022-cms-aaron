@@ -28,6 +28,17 @@
     }
 }
 
+.singleNewsContent {
+    padding: 1rem;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 0.2rem;
+    }
+    .date {
+        margin-bottom: 1rem;
+    }
+}
+
 @include breakpoint(0, $mobile) {
     #news {
         padding: 2.5rem 0.5rem 2.5rem 0.5rem;
