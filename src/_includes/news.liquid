@@ -3,10 +3,18 @@ layout: primary
 ---
 
 <div class="singleNewsContent">
-    <h2>{{ title }}</h2>
-    <p class="date">
-        <i>Written: {{ date | date: "%b %d, %Y" }}</i>
-    </p>
+    <div>
+        <h2>{{ title }}</h2>
+        <p class="date">
+            <i>Written: {{ date | date : "%b %d, %Y" }}</i>
+        </p>
+    </div>
+    <img
+        sizes="{{ sizes }}"
+        srcset="{{ srcset }}"
+        src="{{ src }}"
+        alt="{{ alt }}"
+    />
 
     {{ content }}
 </div>

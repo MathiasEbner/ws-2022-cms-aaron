@@ -105,23 +105,29 @@ layout: primary
     </div>
 </section>
 <section id="about">
-    <div class="imgContainer">
-        <img src="./images/portrait_1280px.jpg" alt="Portrait of Aaron" />
-    </div>
+    <img
+        sizes="(max-width: 1280px) 100vw, 1280px"
+        srcset="
+            ./images/portrait_640px.jpg   640w,
+            ./images/portrait_1024px.jpg 1024w,
+            ./images/portrait_1280px.jpg 1280w
+        "
+        src="./images/portrait_1280px.jpg"
+        alt="Portrait of Aaron"
+    />
 
     <div class="aboutTextContainer">
         <div>
             <p class="super-headline">Why I teach</p>
             <h2>Hi, I'm Aaron!</h2>
         </div>
-
-        <p>
+        <p class="aboutParagraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             itaque incidunt, nihil, recusandae autem aut perferendis reiciendis
             a neque veniam quibusdam animi ex tempora reprehenderit, aspernatur
             asperiores consequatur consectetur ipsum!
         </p>
-        <p>
+        <p class="aboutParagraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             itaque incidunt, nihil, recusandae autem aut perferendis reiciendis
             a neque veniam quibusdam animi ex tempora reprehenderit, aspernatur
@@ -131,7 +137,6 @@ layout: primary
             animi ex tempora reprehenderit, aspernatur asperiores consequatur
             consectetur ipsum!
         </p>
-
         <a href="#" class="button">Learn more</a>
     </div>
 </section>
@@ -146,7 +151,12 @@ layout: primary
             <h3>
                 <a href="{{ n.url }}">{{ n.data.title }}</a>
             </h3>
-            <img src="{{ n.data.img }}" alt="{{ n.data.alt }}" />
+            <img
+                sizes="{{ n.data.sizes }}"
+                srcset="{{ n.data.srcset }}"
+                src="{{ n.data.src }}"
+                alt="{{ n.data.alt }}"
+            />
             <div class="arcticleTextContainer">
                 <p>{{ n.data.excerpt }}</p>
                 <a href="{{ n.url }}" class="button">Read more</a>
